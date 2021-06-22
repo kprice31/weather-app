@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Draft</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="search-form">
+        <div class="row">
+          <div class="col-4">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Enter city here"
+              autocomplete="off"
+              autofocus="on"
+              id="city-input"
+            />
+          </div>
+          <div class="col-2">
+            <input class="btn btn-primary" type="submit" value="Search" />
+          </div>
+          <div class="col-2">
+            <input class="btn btn-primary" type="submit" value="Current" />
+          </div>
+        </div>
+      </form>
+      <div class="row">
+        <div class="col-3">
+          <div class="current-picture">
+            <img src="images/sunny copy.png" alt="sunny" />
+          </div>
+        </div>
+        <div class="col-3">
+          <span class="temp" id="temp">75</span>
+          <span class="units">
+            <a href="#" id="celsiusLink">ºF</a> |
+            <a href="#" id="fahrenheitLink">ºC</a>
+          </span>
+        </div>
+        <div class="col-3">
+          <div class="forecast">
+            <ul>
+              <li>Precipitation: 10%</li>
+              <li>Wind: 10mph</li>
+              <li>Humidity 92%</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="side-info">
+            <ul>
+              <span class="location" id="city"
+                ><li>Morrison, Colorado</li></span
+              >
+              <br />
+              <span class="date" id="date"> <li>S</li></span>
+              <br />
+              <span class="time" id="time"><li>1:43 pm</li></span>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          Monday <br />
+          <img src="images/partly_cloudy copy.png" alt="weather forecast" />
+          <br />
+          72º F
+        </div>
+        <div class="col-sm">
+          Tuesday <br />
+          <img src="images/partly_cloudy copy.png" alt="weather forecast" />
+          <br />
+          72º F
+        </div>
+        <div class="col-sm">
+          Wednesday <br />
+          <img src="images/partly_cloudy copy.png" alt="weather forecast" />
+          <br />
+          72º F
+        </div>
+        <div class="col-sm">
+          Thursday <br />
+          <img src="images/partly_cloudy copy.png" alt="weather forecast" />
+          <br />
+          73º F
+        </div>
+        <div class="col-sm">
+          Friday <br />
+          <img src="images/partly_cloudy copy.png" alt="weather forecast" />
+          <br />
+          75º F
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
